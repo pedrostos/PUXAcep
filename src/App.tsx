@@ -2,6 +2,7 @@ import { JSXElementConstructor, Key, ReactElement, ReactFragment, useState } fro
 import { BiSearchAlt } from 'react-icons/bi'
 
 import './App.css'
+import './normalize.css'
 
 import Loading from './components/Loading/loading.jsx';
 import Estados from './components/Estados';
@@ -69,7 +70,7 @@ function App() {
 
       </div>
 
-      <div style={{ display: 'flex', padding: '1%' }}>
+      <div className='divSelect'>
 
         <select
           required
@@ -111,9 +112,9 @@ function App() {
         Object.keys(results).length > 0 && (
 
           <div className='infos'>
-            <h3 className='cep'>CEP: {results[0].cep}</h3>
-            <p className='rua'><b>Rua:</b> {results[0].logradouro}</p>
-            <p className='bairro'><b>Bairro:</b> {results[0].bairro}</p>
+            <span className='cep'>CEP: {results[0].cep}</span>
+            <span className='rua'><b>Logradouro:</b> {results[0].logradouro}</span>
+            <span className='bairro'><b>Bairro:</b> {results[0].bairro}</span>
           </div>
         )
       }

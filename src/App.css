@@ -19,16 +19,18 @@
   margin-bottom: 1%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  width: 85%;
+  width: 90%;
 }
 
 .containerInput input::placeholder {
   color: black;
+  font-weight: bolder;
 }
 
 .title {
   font-size: 30px;
   margin: 7%;
+  font-weight: bolder;
 }
 
 .input {
@@ -37,17 +39,19 @@
   border: none;
   background-color: transparent;
   width: 80%;
-  font-weight: bold;
 }
 
 .button {
-  font-size: 30px;
+  display: flex;
+  font-size: 25px;
   cursor: pointer;
   background-color: transparent;
   border: none;
   align-items: center;
   transition: 1s;
   color: black;
+  padding: 2%;
+  align-items: center;
 }
 
 .button:hover {
@@ -57,12 +61,15 @@
 
 .erro {
   padding: 5%;
+  font-weight: bolder;
 }
 
 .infos {
+  display: flex;
+  flex-direction: column;
   margin: 4%;
   background-color: rgba(0, 0, 0, 0.3);
-  width: 80%;
+  width: 85%;
   padding: 2%;
   border-radius: 8px;
   border: 3px solid black ;
@@ -70,16 +77,29 @@
 }
 
 .cep {
+  font-weight: bolder;
+  font-size: larger;
   text-align: center;
   padding-bottom: 3%;
 }
 
+.divSelect {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: 3%;
+  font-size: 14px;
+}
+
+.infos span {
+  margin-bottom: 1%;
+}
+
 select {
   border-radius: 8px;
+  font-weight: bolder;
   height: 30px;
-  width: 160px;
-  margin: 3px;
-  font-weight: bold;
+  width: 49%;
   background-color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -96,8 +116,12 @@ select {
       margin: 3%;
   }
 
+  .button {
+    font-size: 30px;
+  }
+
   .containerInput {
-      width: 40%;
+      width: 50%;
   }
 
   .input {
@@ -112,11 +136,8 @@ select {
       border-radius: 8px;
   }
 
-  .opt {
-    width: 10px;
-  }
-
-  select {
-    width: 200px;
+  .divSelect {
+    width: 53%;
+    margin: 2%;
   }
 }
