@@ -8,8 +8,8 @@
   margin-top: 3%;
   border-radius: 28px;
   background: #A084DC;
-  box-shadow:  8px 8px 16px #423264,
-               -8px -8px 16px #4b3369;
+  box-shadow:  8px 8px 16px #6d44c4,
+               -8px -8px 16px #7135bb;
 }
 
 .containerInput {
@@ -59,7 +59,7 @@
 }
 
 .erro {
-  padding: 5%;
+  padding: 1%;
   font-weight: bolder;
 }
 
